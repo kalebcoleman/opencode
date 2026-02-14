@@ -1,1 +1,1 @@
-/home/kaleb/.config/opencode/superpowers/.opencode/plugins/superpowers.js
+/Users/itzjuztmya/.config/opencode/superpowers/.opencode/plugins/superpowers.js

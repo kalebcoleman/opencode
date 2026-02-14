@@ -1,6 +1,23 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
 
+  "tmux": {
+    "enabled": true,
+    "layout": "main-vertical",
+    "main_pane_size": 70,
+    "main_pane_min_width": 90,
+    "agent_pane_min_width": 30
+  },
+
+  "background_task": {
+    "defaultConcurrency": 6,
+    "providerConcurrency": {
+      "google": 6,
+      "anthropic": 4,
+      "openai": 4
+    }
+  },
+
   "agents": {
     "sisyphus": {
       "model": "anthropic/claude-opus-4-6",
