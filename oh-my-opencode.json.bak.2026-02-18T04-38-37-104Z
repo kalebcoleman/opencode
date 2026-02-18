@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+ 
   "tmux": {
     "enabled": true,
     "layout": "main-vertical",
@@ -7,6 +8,7 @@
     "main_pane_min_width": 90,
     "agent_pane_min_width": 30
   },
+ 
   "background_task": {
     "defaultConcurrency": 6,
     "providerConcurrency": {
@@ -15,6 +17,7 @@
       "opencode": 6
     }
   },
+ 
   "agents": {
     "sisyphus": {
       "model": "openai/gpt-5.3-codex",
@@ -25,18 +28,20 @@
       "variant": "high"
     },
     "oracle": {
-      "model": "openai/gpt-5.3-codex",
+      "model": "openai/gpt-5.2-codex",
       "variant": "high"
     },
+ 
     "librarian": {
-      "model": "openai/gpt-5.3-codex"
+      "model": "openai/gpt-5.2-codex"
     },
     "explore": {
-      "model": "openai/gpt-5.3-codex"
+      "model": "openai/gpt-5.2-codex"
     },
     "multimodal-looker": {
-      "model": "openai/gpt-5.3-codex"
+      "model": "openai/gpt-5.2-codex"
     },
+ 
     "prometheus": {
       "model": "openai/gpt-5.3-codex",
       "variant": "high"
@@ -46,13 +51,15 @@
       "variant": "high"
     },
     "momus": {
-      "model": "openai/gpt-5.3-codex",
+      "model": "openai/gpt-5.2-codex",
       "variant": "high"
     },
+ 
     "atlas": {
       "model": "opencode/glm-5-free"
     }
   },
+ 
   "categories": {
     "visual-engineering": {
       "model": "openai/gpt-5.3-codex"
@@ -62,7 +69,7 @@
       "variant": "xhigh"
     },
     "deep": {
-      "model": "openai/gpt-5.3-codex",
+      "model": "openai/gpt-5.2-codex",
       "variant": "high"
     },
     "artistry": {
@@ -70,29 +77,17 @@
       "variant": "high"
     },
     "quick": {
-      "model": "openai/gpt-5.3-codex"
+      "model": "openai/gpt-5.2-codex"
     },
     "unspecified-low": {
-      "model": "openai/gpt-5.3-codex"
+      "model": "openai/gpt-5.2-codex"
     },
     "unspecified-high": {
-      "model": "openai/gpt-5.3-codex",
+      "model": "openai/gpt-5.2-codex",
       "variant": "high"
     },
     "writing": {
-      "model": "openai/gpt-5.3-codex"
+      "model": "openai/gpt-5.2-codex"
     }
-  },
-  "_migrations": [
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex",
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex"
-  ]
+  }
 }
