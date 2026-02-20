@@ -1,0 +1,26 @@
+=== opencode models opencode ===
+opencode/big-pickle
+opencode/glm-5-free
+opencode/gpt-5-nano
+opencode/minimax-m2.5-free
+opencode/trinity-large-preview-free
+
+Verification:
+- opencode/gpt-5-nano: FOUND
+- opencode/glm-5-free: FOUND
+
+=== opencode models openai ===
+openai/codex-mini-latest
+openai/gpt-5-codex
+openai/gpt-5.1-codex
+openai/gpt-5.1-codex-max
+openai/gpt-5.1-codex-mini
+openai/gpt-5.2
+openai/gpt-5.2-codex
+openai/gpt-5.3-codex
+openai/gpt-5.3-codex-spark
+
+Verification:
+- openai/gpt-5.3-codex: FOUND
+
+SUMMARY: ALL REQUIRED MODELS AVAILABLE

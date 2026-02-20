@@ -1,0 +1,24 @@
+# Task 4 - Variant Policy (Balanced Savings)
+
+Source inspected: `oh-my-opencode.json`
+
+## Lanes with explicit `variant` currently set
+- Agents: `sisyphus (high)`, `hephaestus (high)`, `oracle (high)`, `prometheus (high)`, `metis (high)`, `momus (high)`
+- Categories: `ultrabrain (xhigh)`, `deep (high)`, `artistry (high)`, `unspecified-high (high)`
+
+## Variant keep/drop policy table
+
+| Lane Name | Lane Type (Agent/Category) | Current Variant | Policy Action (KEEP / DOWNSHIFT) | Reason |
+|---|---|---|---|---|
+| ultrabrain | Category | xhigh | KEEP | Only lane allowed to retain `xhigh` for maximum reasoning depth where explicitly needed. |
+| prometheus | Agent | high | KEEP | Critical orchestration lane; preserve reliability/quality at coordinator level. |
+| metis | Agent | high | KEEP | Critical orchestration lane; preserve planning/analysis quality. |
+| momus | Agent | high | KEEP | Critical orchestration lane; preserve creative orchestration quality. |
+| deep | Category | high | DOWNSHIFT | Balanced savings profile: remove explicit `high` and inherit default variant. |
+| artistry | Category | high | DOWNSHIFT | Balanced savings profile: remove explicit `high` and inherit default variant. |
+
+## Validation
+- Keep-set verified: `ultrabrain (xhigh)` and `prometheus/metis/momus (high)`.
+- Downshift candidates verified: `deep` and `artistry` from `high` to default (remove explicit variant).
+- Contradiction check: no lane appears in both keep and downshift sets.
+- Policy guardrail: this policy does not remove variants from `prometheus`, `metis`, `momus`, or `ultrabrain`.

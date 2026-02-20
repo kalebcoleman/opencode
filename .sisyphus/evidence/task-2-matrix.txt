@@ -1,0 +1,26 @@
+## Task 2 Balanced Routing Matrix
+
+Premium keep-set documented: `sisyphus`, `hephaestus`, `oracle`, `prometheus`, `metis`, `momus`, `ultrabrain`, `deep`, `artistry`, `unspecified-high`.
+
+| Lane Type | Lane Name | Current Model | Target Model | Change Type |
+| --- | --- | --- | --- | --- |
+| Agent | sisyphus | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Agent | hephaestus | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Agent | oracle | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Agent | prometheus | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Agent | metis | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Agent | momus | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Category | ultrabrain | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Category | deep | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Category | artistry | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Category | unspecified-high | openai/gpt-5.3-codex | openai/gpt-5.3-codex | Keep Premium |
+| Agent | explore | openai/gpt-5.3-codex | opencode/gpt-5-nano | Downgrade to Nano |
+| Agent | librarian | openai/gpt-5.3-codex | opencode/gpt-5-nano | Downgrade to Nano |
+| Category | quick | openai/gpt-5.3-codex | opencode/gpt-5-nano | Downgrade to Nano |
+| Category | visual-engineering | openai/gpt-5.3-codex | opencode/gpt-5-nano | Downgrade to Nano |
+| Agent | multimodal-looker | openai/gpt-5.3-codex | opencode/glm-5-free | Downgrade to GLM-Free |
+| Category | writing | openai/gpt-5.3-codex | opencode/glm-5-free | Downgrade to GLM-Free |
+| Category | unspecified-low | openai/gpt-5.3-codex | opencode/glm-5-free | Downgrade to GLM-Free |
+| Agent | atlas | opencode/glm-5-free | opencode/glm-5-free | Downgrade to GLM-Free |
+
+Low-cost model verification: target matrix uses both `opencode/gpt-5-nano` and `opencode/glm-5-free`.

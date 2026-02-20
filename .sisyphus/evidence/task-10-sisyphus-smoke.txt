@@ -1,0 +1,12 @@
+PREMIUM LANE SMOKE TEST (sisyphus)
+==================================
+Command: opencode run "Reply with EXACTLY: OK" --agent sisyphus
+Exit Code: 0
+Output Excerpt:
+! agent "sisyphus" not found. Falling back to default agent
+> Sisyphus (Ultraworker) · gpt-5.3-codex
+OK
+[Category+Skill Reminder]
+Provider Errors: NONE (no ProviderModelNotFoundError)
+Warnings: agent "sisyphus" was not resolved; command fell back to default agent
+Result: FAIL

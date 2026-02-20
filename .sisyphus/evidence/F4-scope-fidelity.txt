@@ -1,0 +1,38 @@
+SCOPE FIDELITY CHECK
+====================
+
+1. CHANGE DETECTION:
+   Comparing baseline to current config...
+
+   Actual changes detected:
+   - agents.librarian.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano
+   - agents.explore.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano
+   - agents.multimodal-looker.model: openai/gpt-5.3-codex -> opencode/glm-5-free
+   - categories.quick.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano
+   - categories.visual-engineering.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano
+   - categories.writing.model: openai/gpt-5.3-codex -> opencode/glm-5-free
+   - categories.unspecified-low.model: openai/gpt-5.3-codex -> opencode/glm-5-free
+   - categories.deep.variant: high -> REMOVED
+   - categories.artistry.variant: high -> REMOVED
+
+2. PLANNED vs ACTUAL:
+   agents.librarian.model: PLANNED=opencode/gpt-5-nano, ACTUAL=opencode/gpt-5-nano -> MATCH
+   agents.explore.model: PLANNED=opencode/gpt-5-nano, ACTUAL=opencode/gpt-5-nano -> MATCH
+   agents.multimodal-looker.model: PLANNED=opencode/glm-5-free, ACTUAL=opencode/glm-5-free -> MATCH
+   categories.quick.model: PLANNED=opencode/gpt-5-nano, ACTUAL=opencode/gpt-5-nano -> MATCH
+   categories.visual-engineering.model: PLANNED=opencode/gpt-5-nano, ACTUAL=opencode/gpt-5-nano -> MATCH
+   categories.writing.model: PLANNED=opencode/glm-5-free, ACTUAL=opencode/glm-5-free -> MATCH
+   categories.unspecified-low.model: PLANNED=opencode/glm-5-free, ACTUAL=opencode/glm-5-free -> MATCH
+   categories.deep.variant: PLANNED=REMOVED, ACTUAL=REMOVED -> MATCH
+   categories.artistry.variant: PLANNED=REMOVED, ACTUAL=REMOVED -> MATCH
+
+3. CONTAMINATION CHECK:
+   Unplanned changes: NONE
+   - No differences found outside the 9 planned JSON paths.
+
+4. SUMMARY:
+   Planned changes: 9
+   Actual changes: 9
+   Match rate: 100%
+
+SCOPE FIDELITY: PASS

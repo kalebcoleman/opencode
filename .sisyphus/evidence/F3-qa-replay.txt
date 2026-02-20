@@ -1,0 +1,83 @@
+QA REPLAY REPORT
+================
+
+Replay Timestamp (UTC): 2026-02-20T04:27:12Z
+
+1. JSON VALIDATION REPLAY:
+   Command: python3 -m json.tool /Users/itzjuztmya/.config/opencode/oh-my-opencode.json >/dev/null
+   Exit Code: 0
+   Status: PASS
+
+2. KEY PLAN COMMAND REPLAY:
+   Command: opencode models opencode
+   Exit Code: 0
+   Status: PASS
+   Models:
+   - opencode/big-pickle
+   - opencode/glm-5-free
+   - opencode/gpt-5-nano
+   - opencode/minimax-m2.5-free
+   - opencode/trinity-large-preview-free
+
+   Command: opencode models openai
+   Exit Code: 0
+   Status: PASS
+   Models:
+   - openai/codex-mini-latest
+   - openai/gpt-5-codex
+   - openai/gpt-5.1-codex
+   - openai/gpt-5.1-codex-max
+   - openai/gpt-5.1-codex-mini
+   - openai/gpt-5.2
+   - openai/gpt-5.2-codex
+   - openai/gpt-5.3-codex
+   - openai/gpt-5.3-codex-spark
+
+3. EVIDENCE FILE VERIFICATION:
+   Command: ls .sisyphus/evidence/task-*.txt
+   Exit Code: 0
+   task-1-baseline.txt: EXISTS
+   task-2-matrix.txt: EXISTS
+   task-3-model-availability.txt: EXISTS
+   task-4-variant-policy.txt: EXISTS
+   task-5-pathlist.txt: EXISTS
+   task-6-agent-remap.txt: EXISTS
+   task-7-category-remap.txt: EXISTS
+   task-8-variant-downshift.txt: EXISTS
+   task-9-integrity.txt: EXISTS
+   task-10-explore-smoke.txt: EXISTS
+   task-10-sisyphus-smoke.txt: EXISTS
+   task-11-rollback.txt: EXISTS
+   task-12-benchmark.txt: EXISTS
+   task-13-evidence-index.txt: EXISTS
+   F1 evidence files: F1-compliance-audit.txt
+   F2 evidence files: F2-quality-review.txt
+
+   All files present: YES
+   Status: PASS
+
+4. EVIDENCE CONTENT MARKERS:
+   Checking for both expected marker classes in each required task evidence file:
+   - Timestamp marker (Timestamp or ISO-like date)
+   - PASS/FAIL marker (PASS/PASSED/FAIL/FAILED)
+
+   task-1-baseline.txt: timestamp=YES, pass/fail=NO
+   task-2-matrix.txt: timestamp=NO, pass/fail=NO
+   task-3-model-availability.txt: timestamp=NO, pass/fail=NO
+   task-4-variant-policy.txt: timestamp=NO, pass/fail=NO
+   task-5-pathlist.txt: timestamp=NO, pass/fail=NO
+   task-6-agent-remap.txt: timestamp=NO, pass/fail=YES
+   task-7-category-remap.txt: timestamp=NO, pass/fail=YES
+   task-8-variant-downshift.txt: timestamp=NO, pass/fail=YES
+   task-9-integrity.txt: timestamp=NO, pass/fail=YES
+   task-10-explore-smoke.txt: timestamp=NO, pass/fail=YES
+   task-10-sisyphus-smoke.txt: timestamp=NO, pass/fail=YES
+   task-11-rollback.txt: timestamp=NO, pass/fail=NO
+   task-12-benchmark.txt: timestamp=NO, pass/fail=YES
+   task-13-evidence-index.txt: timestamp=NO, pass/fail=NO
+
+   All required evidence files contain both marker classes: NO
+   Status: FAIL
+
+OVERALL QA REPLAY: FAIL
+Reason: Evidence file marker completeness check failed (missing timestamp and/or pass/fail markers in one or more required files).

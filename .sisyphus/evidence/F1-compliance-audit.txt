@@ -1,0 +1,39 @@
+PLAN COMPLIANCE AUDIT
+=====================
+
+MUST HAVE VERIFICATION:
+-----------------------
+1. Uses both opencode/gpt-5-nano and opencode/glm-5-free in low-cost routing:
+   - opencode/gpt-5-nano found in agents/categories: agents.librarian, agents.explore, categories.quick, categories.visual-engineering
+   - opencode/glm-5-free found in agents/categories: agents.multimodal-looker, agents.atlas, categories.writing, categories.unspecified-low
+   Status: SATISFIED
+   Evidence: oh-my-opencode.json; task-2-matrix.txt; task-6-agent-remap.txt; task-7-category-remap.txt
+
+2. Keeps premium on openai/gpt-5.3-codex for critical orchestrators:
+   - Premium agents: sisyphus=openai/gpt-5.3-codex, hephaestus=openai/gpt-5.3-codex, oracle=openai/gpt-5.3-codex, prometheus=openai/gpt-5.3-codex, metis=openai/gpt-5.3-codex, momus=openai/gpt-5.3-codex
+   - Premium categories: ultrabrain=openai/gpt-5.3-codex, deep=openai/gpt-5.3-codex, artistry=openai/gpt-5.3-codex, unspecified-high=openai/gpt-5.3-codex
+   Status: SATISFIED
+   Evidence: oh-my-opencode.json; task-2-matrix.txt; task-6-agent-remap.txt; task-7-category-remap.txt
+
+MUST NOT HAVE VERIFICATION:
+---------------------------
+1. No edits outside oh-my-opencode.json:
+   Status: SATISFIED
+   Evidence: Baseline-to-final comparison shows exactly 9 changes, all under agents.* or categories.* in oh-my-opencode.json; out-of-scope keys unchanged.
+
+2. No changes to tmux/background_task/provider/auth/plugin:
+   Status: SATISFIED
+   Evidence: Baseline comparison: tmux MATCH, background_task MATCH, $schema MATCH. No provider/auth/plugin key additions detected.
+
+3. No cleanup/refactor of _migrations:
+   Status: SATISFIED
+   Evidence: _migrations MATCH baseline (task-9-integrity.txt hash comparison; direct baseline comparison confirms equality).
+
+4. No model pools/round-robin/fallback constructs:
+   Status: SATISFIED
+   Evidence: Config scan for pool/round-robin/fallback returned no matches; schema usage remains single-model assignments per lane.
+
+OVERALL COMPLIANCE: PASS
+
+Audit Notes:
+- Smoke artifacts task-10-explore-smoke.txt and task-10-sisyphus-smoke.txt show CLI fallback warnings for --agent resolution; this does not change model-routing compliance status above.

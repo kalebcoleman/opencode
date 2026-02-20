@@ -1,0 +1,13 @@
+Agent Model Remap Applied:
+- agents.librarian.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano [VERIFIED]
+- agents.explore.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano [VERIFIED]
+- agents.multimodal-looker.model: openai/gpt-5.3-codex -> opencode/glm-5-free [VERIFIED]
+
+Premium Keep-set Unchanged:
+- sisyphus.model: openai/gpt-5.3-codex [UNCHANGED]
+- oracle.model: openai/gpt-5.3-codex [UNCHANGED]
+- prometheus.model: openai/gpt-5.3-codex [UNCHANGED]
+- metis.model: openai/gpt-5.3-codex [UNCHANGED]
+- momus.model: openai/gpt-5.3-codex [UNCHANGED]
+
+JSON Validation: PASS

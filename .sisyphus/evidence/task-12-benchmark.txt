@@ -1,0 +1,41 @@
+BENCHMARK RESULTS
+=================
+
+Prompt 1: "List 3 programming languages"
+Command: opencode run "List 3 programming languages"
+Exit Code: 0
+Response Excerpt: - Python; - JavaScript; - Rust
+Latency: ~8.42 seconds
+Errors: NONE
+Result: PASS
+
+Prompt 2: "What is 2+2?"
+Command: opencode run "What is 2+2?"
+Exit Code: 0
+Response Excerpt: 2+2 is 4.
+Latency: ~9.25 seconds
+Errors: NONE
+Result: PASS
+
+Prompt 3: "Say hello"
+Command: opencode run "Say hello"
+Exit Code: 0
+Response Excerpt: Hello.
+Latency: ~7.90 seconds
+Errors: NONE
+Result: PASS
+
+ADDITIONAL LOW-COST LANE CHECK (explore/librarian targeting)
+-------------------------------------------------------------
+- Command pattern used: opencode run --agent <explore|librarian> "<prompt>"
+- Exit codes: all 0 (6/6)
+- Provider errors: 0
+- Warning observed on every run: agent "explore"/"librarian" is a subagent, not a primary agent; CLI falls back to default agent
+- Empty outputs: none
+- Repeated tool-call failures: none
+
+SUMMARY:
+- Successful responses: 3/3 (required prompts) and 6/6 for explicit explore/librarian targeting attempts
+- Provider errors: 0
+- Critical regressions: NONE (no empty output, no repeated tool-call failure, no provider errors)
+- Overall: PASS (with warning that explicit --agent explore/librarian falls back to default agent)

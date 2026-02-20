@@ -1,0 +1,14 @@
+Category Model Remap Applied:
+- categories.quick.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano [VERIFIED]
+- categories.visual-engineering.model: openai/gpt-5.3-codex -> opencode/gpt-5-nano [VERIFIED]
+- categories.writing.model: openai/gpt-5.3-codex -> opencode/glm-5-free [VERIFIED]
+- categories.unspecified-low.model: openai/gpt-5.3-codex -> opencode/glm-5-free [VERIFIED]
+
+Premium Category Keep-set Unchanged:
+- ultrabrain.model: openai/gpt-5.3-codex [UNCHANGED]
+- deep.model: openai/gpt-5.3-codex [UNCHANGED]
+- artistry.model: openai/gpt-5.3-codex [UNCHANGED]
+- unspecified-high.model: openai/gpt-5.3-codex [UNCHANGED]
+
+No Categories Disabled: VERIFIED
+JSON Validation: PASS

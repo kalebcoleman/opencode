@@ -1,0 +1,50 @@
+Path: agents.librarian.model
+Before: openai/gpt-5.3-codex
+After: opencode/gpt-5-nano
+Scope: VALID (agents.* path)
+
+Path: agents.explore.model
+Before: openai/gpt-5.3-codex
+After: opencode/gpt-5-nano
+Scope: VALID (agents.* path)
+
+Path: agents.multimodal-looker.model
+Before: openai/gpt-5.3-codex
+After: opencode/glm-5-free
+Scope: VALID (agents.* path)
+
+Path: categories.quick.model
+Before: openai/gpt-5.3-codex
+After: opencode/gpt-5-nano
+Scope: VALID (categories.* path)
+
+Path: categories.visual-engineering.model
+Before: openai/gpt-5.3-codex
+After: opencode/gpt-5-nano
+Scope: VALID (categories.* path)
+
+Path: categories.writing.model
+Before: openai/gpt-5.3-codex
+After: opencode/glm-5-free
+Scope: VALID (categories.* path)
+
+Path: categories.unspecified-low.model
+Before: openai/gpt-5.3-codex
+After: opencode/glm-5-free
+Scope: VALID (categories.* path)
+
+Path: categories.deep.variant
+Before: high
+After: REMOVED (inherit default variant)
+Scope: VALID (categories.* path)
+
+Path: categories.artistry.variant
+Before: high
+After: REMOVED (inherit default variant)
+Scope: VALID (categories.* path)
+
+Total changes: 9
+All paths in scope: YES
+Whitelisted path families only (agents.* / categories.*): YES
+Out-of-scope paths: NONE
+Forbidden path references (tmux/background_task/_migrations): NONE

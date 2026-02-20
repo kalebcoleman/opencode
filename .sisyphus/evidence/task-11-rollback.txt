@@ -1,0 +1,22 @@
+ROLLBACK PROCEDURE
+==================
+
+1. ROLLBACK COMMAND:
+   cp /tmp/oh-my-opencode.before.json /Users/itzjuztmya/.config/opencode/oh-my-opencode.json
+
+2. ROLLBACK TRIGGERS (execute rollback if ANY of these occur):
+   - ProviderModelNotFoundError for opencode/gpt-5-nano
+   - ProviderModelNotFoundError for opencode/glm-5-free
+   - Repeated timeout (>3 consecutive failures on low-cost lanes)
+   - Severe quality regression (user-reported, confirmed)
+
+3. VERIFICATION AFTER ROLLBACK:
+   python3 -m json.tool /Users/itzjuztmya/.config/opencode/oh-my-opencode.json
+
+4. BASELINE SOURCE:
+   Path: /tmp/oh-my-opencode.before.json
+   Hash: 2ab1544cd2ee13160ce4f92f9e8c333d321398cc5e91f589f748ba58a7210478
+
+5. NOTES:
+   - Rollback is safe and reversible
+   - Original config is preserved in /tmp

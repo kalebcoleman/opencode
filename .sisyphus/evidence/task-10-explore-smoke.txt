@@ -1,0 +1,11 @@
+CHEAP LANE SMOKE TEST (explore)
+================================
+Command: opencode run "Reply with EXACTLY: OK" --agent explore
+Exit Code: 0
+Output Excerpt:
+! agent "explore" is a subagent, not a primary agent. Falling back to default agent
+> Sisyphus (Ultraworker) · gpt-5.3-codex
+OK
+Provider Errors: NONE (no ProviderModelNotFoundError)
+Warnings: agent "explore" was not used; command fell back to default agent
+Result: FAIL

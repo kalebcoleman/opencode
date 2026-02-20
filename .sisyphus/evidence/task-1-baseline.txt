@@ -1,0 +1,11 @@
+Timestamp: 2026-02-20T03:55:39Z
+Source file: /Users/itzjuztmya/.config/opencode/oh-my-opencode.json
+Source hash (shasum): e113fd3151c48efdeb07348c86dc6139972b89ac
+Snapshot file: /tmp/oh-my-opencode.before.json
+Snapshot hash (shasum): e113fd3151c48efdeb07348c86dc6139972b89ac
+Hash comparison: MATCH
+Guardrails (allowed edit paths):
+- agents.*.model
+- agents.*.variant
+- categories.*.model
+- categories.*.variant
